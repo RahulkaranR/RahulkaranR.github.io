@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+.nav-ul-links{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.logo{
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+}
+.nav-ul-links li{
+    list-style: none;
+
+}
+.nav-ul-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 2.5rem;
+    display: block;
+}
+.nav-ul-links li a:hover{
+    background-color: #355;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.3rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+.toggle-button .taggo-span{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+ 
+.jpg2{
+    width: 100%;
+    height: auto;
+    position:static;
+
+}
+.Main-heading h1{
+    background-color: white;
+    position:absolute;
+    font-size: 30px;
+    top:28%;
+    left:50%;
+    padding: 5px 9px;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+.contact-skill{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.contact-skill button{
+    background-color: skyblue;
+    border-radius: 30px;
+    margin-left: 25px;
+    padding:10px 0px;
+}
+.contact-skill button a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 22px;
+    color: black;
+    
+}
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1 1 300px;
+    
+}
+#skills div{
+   margin: 35px;
+   
+}
+
+#skill-id{
+    text-align: center;
+    font-size: 40px;
+}
+#skills img{
+    height: 190px;
+    width: 270px;
+}
+
+
+#skills{
+    text-align: center;
+}
+#skills div{
+    position: relative;
+    margin-bottom: 4.9rem;
+    background-color: lightslategray;
+    
+}
+#skills .item h1{
+    background-color: gray;
+    color:white;
+}
+
+#skills div p{
+    position:absolute;
+    padding: 0px 0px 0px 0px;
+   
+}
+
+#About{
+    margin-top: 2.5rem;
+}
+#About h1{
+    text-align: center;
+    font-size: 45px;
+    margin: 10px;
+}
+#About p{
+    font-size: 22px;
+}
+
+
+#projects h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3rem;
+
+
+}
+#projects p{
+    text-align: center;
+    padding: 5rem;
+    font-size: 27px;
+}
+#pro-title{
+    background-color: salmon;
+    color: white;
+   
+}
+#projects-full{
+    background-color:thistle ;
+}
+@media (max-width: 780px){
+    #projects-full h1{
+        font-size: 20px;
+    }
+}
+
+#grid-about{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3px;
+    grid-template-rows: auto;
+    background-color: skyblue;
+
+}
+#ele-1{
+    grid-row: 1;
+    grid-column: span 3;
+}
+#ele-2{
+    grid-row: 1;
+    grid-column: span 9;
+}
+@media (max-width: 780px){
+    #grid-about{
+        padding: 20px;
+    }
+
+    #ele-1{
+    grid-row: 1;
+    grid-column: span 12;
+}
+#ele-2{
+    grid-row: 2;
+    grid-column: span 12;
+}
+#About h1{
+    font-size: 20px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+    .contact-skill button a{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 650px){
+
+    .toggle-button{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .navbar .nav-ul-links{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar .nav-ul-links li{
+        text-align: center;
+    }
+    .nav-ul-links li a{
+        padding: .7rem 1.5rem;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .Main-heading h1{
+        font-size: 17px;
+    }
+    .contact-skill{
+        display: none;
+    }
+}
